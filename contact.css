@@ -12,11 +12,6 @@
     margin-top: 0em;
     font-size: 50px;
 }
-nav{
-    text-align: right;
-    font-size: 20px;
-    padding-right: 100px;
-}
 .header-title{
     padding: 50px;
 }
@@ -30,10 +25,73 @@ section{
 .section-content1{
     font-size: 20px;
 }
-i{
+.main a{
     font-size: 40px;
     padding: 10px;
     display: inline;
     position: relative;
     line-height: 1.6;
+    margin: 1rem;
 }
+nav a{
+    color: white;
+    padding: 5px;
+}
+nav .ham-menu-items{
+    text-align: right;
+    font-size: 20px;
+    padding-right: 100px;
+}
+.link:hover{
+    color: blue;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+.fonts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ham-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+@media screen and (max-width: 600px){
+    .ham-menu{
+        display: flex;
+    }
+    nav .ham-menu-items{
+        display: none;
+        width: 100%;
+        padding-right: 0;
+    }
+    nav .ham-menu-items.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav .ham-menu-items.active{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+        line-height: 1.5em;
+    }
+}
+nav a .bar{
+    color: black;
+    background:snow;
+    height: 3px;
+    width: 30px;
+}
+*{
+    box-sizing: border-box;
+}
+
