@@ -107,3 +107,11 @@ nav a .bar{
 *{
     box-sizing: border-box;
 }
+.title .header-title h1{
+    font-size: calc(5rem + 2vw);
+}
+@media screen and (max-width : 500px) {
+    .title .header-title h1{
+        font-size: calc(3rem + 1vw);
+    }
+}
